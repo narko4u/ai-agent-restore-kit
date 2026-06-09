@@ -1,4 +1,4 @@
-# Sovereign Restore Kit
+# AI Agent Restore Kit
 ### Time Machine for AI Agents — Backup, Clone, Restore Your Agent Identity
 
 ---
@@ -7,7 +7,7 @@
 
 If you've ever watched an agent forget everything after a model swap, a server migration, or a context window overflow — you know the pain. Hours of taught behavior, learned preferences, and architectural decisions... gone.
 
-**Sovereign Restore Kit fixes that.** It's a drop-in backup/clone/restore system that snapshots your AI agent's entire identity — configuration, memory, preferences, learned facts, and decision history — and can restore it to a fresh instance in under 60 seconds.
+**AI Agent Restore Kit fixes that.** It's a drop-in backup/clone/restore system that snapshots your AI agent's entire identity — configuration, memory, preferences, learned facts, and decision history — and can restore it to a fresh instance in under 60 seconds.
 
 ---
 
@@ -24,7 +24,7 @@ AI agents are fragile. Here's what happens when you don't have a restore plan:
 | You onboard a new team member who needs an agent | Start from scratch. Teach it everything. | Clone a known-good identity from an existing agent. Customize in minutes. |
 | A deployment fails or data gets corrupted | Disaster. No fallback. No rollback. | `kit rollback --snapshot 2026-06-09` — back to a known good state. |
 
-**The underlying problem:** Most AI agent frameworks store identity and memory in *context* — the ephemeral conversation history that vanishes when the window closes. Sovereign Restore Kit externalizes that identity into a durable, portable, schema'd store that survives any restart, any engine swap, any migration.
+**The underlying problem:** Most AI agent frameworks store identity and memory in *context* — the ephemeral conversation history that vanishes when the window closes. AI Agent Restore Kit externalizes that identity into a durable, portable, schema'd store that survives any restart, any engine swap, any migration.
 
 ---
 
@@ -93,7 +93,7 @@ AI agents are fragile. Here's what happens when you don't have a restore plan:
 
 ## Comparison: Restore Kit vs. "Just Save the Context"
 
-| **Capability** | **Plain Context Save** | **Sovereign Restore Kit** |
+| **Capability** | **Plain Context Save** | **AI Agent Restore Kit** |
 |---|---|---|
 | Survives engine swap | ❌ No | ✅ Yes — engine-agnostic |
 | Survives server migration | ❌ No | ✅ Yes — portable SQLite archive |
@@ -109,11 +109,11 @@ AI agents are fragile. Here's what happens when you don't have a restore plan:
 
 ## Testimonial
 
-> *"I spent three days building an agent that knew our entire codebase, deployment pipeline, and team preferences. Then I switched from Claude to DeepSeek because of costs. The agent woke up blank. I had to rebuild everything by hand. One week later, I found Sovereign Restore Kit. Now I can switch models in minutes — my agent remembers everything. This is what agent infrastructure should have been from day one."*
+> *"I spent three days building an agent that knew our entire codebase, deployment pipeline, and team preferences. Then I switched from Claude to DeepSeek because of costs. The agent woke up blank. I had to rebuild everything by hand. One week later, I found AI Agent Restore Kit. Now I can switch models in minutes — my agent remembers everything. This is what agent infrastructure should have been from day one."*
 >
 > — **D. Chen, Infrastructure Lead**
 
-> *"We run a team of 12 agents across staging and production. Cloning a production agent into staging for testing used to be a nightmare — we'd have duplicate identities, conflicting vault keys, hours of manual config. Sovereign Restore Kit's clone with identity remapping turned that into a single command. We use it daily."*
+> *"We run a team of 12 agents across staging and production. Cloning a production agent into staging for testing used to be a nightmare — we'd have duplicate identities, conflicting vault keys, hours of manual config. AI Agent Restore Kit's clone with identity remapping turned that into a single command. We use it daily."*
 >
 > — **M. Torres, DevOps Engineer**
 
@@ -123,8 +123,8 @@ AI agents are fragile. Here's what happens when you don't have a restore plan:
 
 ```bash
 # Download the kit
-git clone https://github.com/empirelabs/sovereign-restore-kit.git
-cd sovereign-restore-kit
+git clone https://github.com/empirelabs/ai-agent-restore-kit.git
+cd ai-agent-restore-kit
 
 # Run the quickstart demo
 ./quickstart.sh
@@ -172,7 +172,7 @@ If you rely on AI agents for daily work — and you want that work to survive en
 
 **Your agent has a soul. Keep it safe.**
 
-[Buy on Gumroad →](https://empirelabs.gumroad.com/l/sovereign-restore-kit)
+[Buy on Gumroad →](https://empirelabs.gumroad.com/l/ai-agent-restore-kit)
 
 ---
 

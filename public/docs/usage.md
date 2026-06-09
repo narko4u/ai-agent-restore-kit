@@ -4,8 +4,8 @@
 
 ```bash
 # Clone the public repo
-git clone https://github.com/narko4u/sovereign-restore-kit.git
-cd sovereign-restore-kit
+git clone https://github.com/narko4u/ai-agent-restore-kit.git
+cd ai-agent-restore-kit
 
 # Make the quickstart executable
 chmod +x public/quickstart.sh

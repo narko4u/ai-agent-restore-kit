@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Sovereign Restore Kit — Quickstart Demo
+# AI Agent Restore Kit — Quickstart Demo
 # ===============================================
 # Run this to see backup/clone/restore in action.
 # No dependencies except Python 3 and a POSIX shell.
@@ -36,7 +36,7 @@ SNAPSHOT_FILE="$BACKUP_DIR/agent-snapshot-latest.tar.gz"
 
 echo -e "${BOLD}${BLUE}"
 echo "╔════════════════════════════════════════════════╗"
-echo "║      Sovereign Restore Kit - Quickstart        ║"
+echo "║      AI Agent Restore Kit - Quickstart        ║"
 echo "║      Time Machine for AI Agents                ║"
 echo "╚════════════════════════════════════════════════╝"
 echo -e "${NC}"
@@ -116,9 +116,9 @@ Issuer: Empire Labs
 §
 === KNOWLEDGE BASE ===
 §
-Project: Sovereign Restore Kit — version 1.0, in development
+Project: AI Agent Restore Kit — version 1.0, in development
 Stack: Python 3, SQLite, Hermes CLI
-Repository: /mnt/c/VaultSentinel/EmpireLabs/Products/sovereign-restore-kit
+Repository: /mnt/c/VaultSentinel/EmpireLabs/Products/ai-agent-restore-kit
 §
 Decisions: Use SQLite for vault (portable, no daemon needed)
 Decisions: Store memories in flat §-delimited format (Hermes-compatible)
@@ -162,7 +162,7 @@ seeds = [
     ('identity', 'agent_id', 'sovereign-dev-v1@empirelabs.com.au', 'string', '', ''),
     ('preferences', 'tone', 'direct', 'string', '', ''),
     ('preferences', 'verbosity', 'concise', 'string', '', ''),
-    ('facts', 'project_restore_kit', json.dumps({'name': 'Sovereign Restore Kit', 'status': 'active', 'version': '1.0'}), 'json', '', 'backup,clone,restore'),
+    ('facts', 'project_restore_kit', json.dumps({'name': 'AI Agent Restore Kit', 'status': 'active', 'version': '1.0'}), 'json', '', 'backup,clone,restore'),
     ('facts', 'stack', json.dumps(['Python 3', 'SQLite', 'Hermes CLI']), 'json', '', 'infrastructure'),
     ('decisions', 'vault_engine', 'Use SQLite — portable, no daemon, single file. Chose over PostgreSQL for zero-dependency portability.', 'string', '', 'architecture'),
     ('user', 'eddie_communication', 'Direct, async via Telegram. Prefers bullet points over prose.', 'string', '', 'user'),
@@ -212,7 +212,7 @@ tar -czf "$SNAPSHOT_FILE" -C "$DEMO_DIR" "original-agent/"
 
 echo -e "  ${ARROW} Writing manifest..."
 cat > "$MANIFEST_FILE" << MAN
-# Sovereign Restore Kit — Backup Manifest
+# AI Agent Restore Kit — Backup Manifest
 snapshot_id:     ${TIMESTAMP}
 agent_name:      sovereign-dev
 agent_id:        sovereign-dev-v1@empirelabs.com.au

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Sovereign Restore Kit externalizes an AI agent's identity from ephemeral
+The AI Agent Restore Kit externalizes an AI agent's identity from ephemeral
 context into a durable, portable, schema'd store. This breaks the dependency
 between the agent's "soul" and the runtime that hosts it.
 
@@ -16,7 +16,7 @@ between the agent's "soul" and the runtime that hosts it.
                    │ interacts with
                    ▼
 ┌─────────────────────────────────────────────────┐
-│              Sovereign Restore Kit               │
+│              AI Agent Restore Kit               │
 │                                                  │
 │  ┌──────────┐  ┌──────────┐  ┌───────────────┐ │
 │  │  Vault   │  │ Memory   │  │   Identity    │ │
