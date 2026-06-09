@@ -27,7 +27,7 @@ NC='\033[0m' # No Color
 CHECK="✓"
 ARROW="→"
 
-DEMO_DIR="/tmp/sovereign-restore-demo-$$"
+DEMO_DIR="/tmp/ai-agent-restore-demo-$$"
 ORIG_AGENT="$DEMO_DIR/original-agent"
 RESTORED_AGENT="$DEMO_DIR/restored-agent"
 CLONED_AGENT="$DEMO_DIR/cloned-agent"
